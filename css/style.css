@@ -1,0 +1,137 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #716b6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: auto;
+    height: auto;
+    max-width: 450px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.grupo-de-entrada {
+    width: auto;
+    height: auto;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Reduz o tamanho dos textboxes para telas menores */
+input[type="number"] {
+    width: auto;
+    height: auto;
+    padding: 8px; /* Reduz o padding para tornar os textboxes menores */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; /* Reduz o tamanho da fonte */
+}
+
+button {
+    display: inline;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.resultado-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resultado {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#valorComImposto {
+    width: auto;
+    height: auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+}
+
+.data-atualizada {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Estilos para telas menores (mobile-first) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+    
+    input[type="number"] {
+        padding: 6px; /* Reduz ainda mais o padding para telas menores */
+        font-size: 16px; /* Aumenta um pouco o tamanho da fonte */
+    }
+    
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    
+    .resultado {
+        font-size: 16px;
+    }
+    
+    #valorComImposto {
+        font-size: 18px;
+    }
+    
+    .data-atualizada {
+        font-size: 12px;
+    }
+}
+
+/* Estilos para o footer */
+footer {
+    font-size: 12px;
+    color: #777;
+    margin-top: 20px;
+}
